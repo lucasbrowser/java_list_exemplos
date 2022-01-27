@@ -5,7 +5,7 @@
  */
 package com.lucas.javalistexemplos.list;
 
-import static com.lucas.javalistexemplos.domain.DadosListas.carregarPessoas;
+import static com.lucas.javalistexemplos.control.DadosListas.carregarPessoas;
 import com.lucas.javalistexemplos.domain.Pessoa;
 import java.util.Comparator;
 import java.util.List;

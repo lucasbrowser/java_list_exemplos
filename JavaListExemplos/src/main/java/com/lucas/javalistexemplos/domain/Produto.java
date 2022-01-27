@@ -25,6 +25,14 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    public Produto(int codigo, double precoVenda, int quantidade) {
+        this.codigo = codigo;
+        this.precoVenda = precoVenda;
+        this.quantidade = quantidade;
+    }
+    
+    
+
     public Produto() {
     }
 
