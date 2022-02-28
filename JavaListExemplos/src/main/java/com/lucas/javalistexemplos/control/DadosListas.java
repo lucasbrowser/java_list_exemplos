@@ -5,6 +5,7 @@
  */
 package com.lucas.javalistexemplos.control;
 
+import com.lucas.javalistexemplos.domain.Estoque;
 import com.lucas.javalistexemplos.domain.Pessoa;
 import com.lucas.javalistexemplos.domain.Produto;
 import com.lucas.javalistexemplos.domain.Servico;
@@ -89,6 +90,22 @@ public class DadosListas {
         servico3.getServicoItens().add(itemServico9);
         
         return venda;
+        
+    }
+    
+    public static List<Estoque> carregarEstoque(){
+         
+        Estoque estoque1 = new Estoque("M1", "Mostruário", 5, 3);
+        Estoque estoque2 = new Estoque("E1", "Normal", 7, 1);
+        Estoque estoque3 = new Estoque("F1", "Fornecedor", 3,0);
+        
+        List<Estoque> lEstoque = new LinkedList<>();         
+        lEstoque.add(estoque1);          
+        lEstoque.add(estoque2);          
+        lEstoque.add(estoque3);          
+
+        
+        return lEstoque;
         
     }
     
