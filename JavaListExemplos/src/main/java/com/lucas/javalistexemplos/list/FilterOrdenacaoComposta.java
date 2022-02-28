@@ -37,10 +37,12 @@ public class FilterOrdenacaoComposta {
         * Ordenar o estoque pelo saldo
         */
         List<Estoque> lEstoqueOrdenadoSaldo = lEstoque.stream()
-                .sorted((first, second) -> first.getCodigo().compareTo(second.getCodigo()))
                 .sorted(Comparator.comparing(e -> (e.getQuantidade() - e.getQuantidadeReservada())))
                 .collect(Collectors.toList());
         Collections.reverse(lEstoqueOrdenadoSaldo);
+        lEstoqueOrdenadoSaldo.stream()
+                .sorted((first, second) -> first.getCodigo().compareTo(second.getCodigo()))
+                .collect(Collectors.toList());
         
         System.out.println("\nLista de Estoque Ordenado pelo Saldo\n");
         lEstoqueOrdenadoSaldo.stream().forEach(p -> System.out.println("Id: "+p.getCodigo()+", "

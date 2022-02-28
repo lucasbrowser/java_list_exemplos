@@ -96,8 +96,8 @@ public class DadosListas {
     public static List<Estoque> carregarEstoque(){
          
         Estoque estoque1 = new Estoque("M1", "Mostruário", 5, 3);
-        Estoque estoque2 = new Estoque("E1", "Normal", 7, 1);
-        Estoque estoque3 = new Estoque("F1", "Fornecedor", 3,0);
+        Estoque estoque2 = new Estoque("E1", "Normal", 7, 3);
+        Estoque estoque3 = new Estoque("F1", "Fornecedor", 3,2);
         
         List<Estoque> lEstoque = new LinkedList<>();         
         lEstoque.add(estoque1);          
